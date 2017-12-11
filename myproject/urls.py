@@ -21,5 +21,6 @@ from .views import welcome
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^player/',include('player.url')),
+    url(r'^games/',include('myapp.url')),
     url(r'^$',views.welcome,name="welcome_page")
 ]
